@@ -8,6 +8,17 @@ public class HottestTemperature {
 	public static void main(String[] args) {
 		HottestTemperature ob = new HottestTemperature();
 		ob.testHottestTemperatureInDay();
+		HottestTemperature ob1 = new HottestTemperature();
+		ob1.testHottestTemperatureInManyDays();
+	}
+	private void testHottestTemperatureInManyDays() {
+		CSVRecord largest = hottestTemperatureInManyDays();
+		//System.out.println("Hottest temperature was " + largest.get("TemperatureF") + " at " + largest.get("TimeEST"));
+		
+	}
+	private CSVRecord hottestTemperatureInManyDays() {
+		
+		return null;
 	}
 	private void testHottestTemperatureInDay() {
 		FileResource fr = new FileResource();
@@ -31,5 +42,6 @@ public class HottestTemperature {
 		}
 		return largestSoFar;
 	}
+	
 
 }
